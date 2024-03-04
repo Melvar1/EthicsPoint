@@ -1,0 +1,307 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  color: #424143;
+  font: normal 400 16px/1.75 helvetica;
+  margin: 0;
+}
+
+a {
+  color: #ef700c;
+  outline: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  color:08000;
+}
+
+.laptop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  border: 0;
+  display: block;
+  BACKGROUND-COLOR: #33658a;
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 20px;
+}
+
+ol, ul {
+  margin: 1em 0;
+  padding: 0 0 0 1.25em;
+}
+
+p {
+  margin: 1em 0;
+  padding: 0;
+}
+
+.contain {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.fill {
+  min-width: 1200px;
+  width: 100%;
+}
+
+.bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.top {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* header */
+
+header {
+  display: block;
+  padding: 5px;
+  background: #004787;
+  color: white;
+}
+
+#epLang {
+  color: black;
+  display: block;
+}
+
+#epLang a {
+  display: none;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  background: url(logo1.png) center top no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 50px;
+  margin: 20px 30px 20px 10px;
+  width: 150px;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+
+}
+
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  font: normal 400 16px/1.75 roboto;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+#epAttention {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* content */
+
+main {
+  display: block;
+  padding: 30px 0 50px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.col-left {
+  padding: 0 10px;
+  width: 58%;
+}
+
+div.col-right {
+  padding: 0 10px;
+  width: 38%;
+}
+
+h1 {
+  color: #b2bb35;
+  font: normal 700 35px/1.75 'roboto';
+  padding: 0;
+}
+
+h2 {
+  font: normal 700 2opx 'roboto';
+  font-weight: bold;
+  padding: 0;
+}
+
+h3 {
+  font: normal 700 16px 'roboto';
+  font-weight: bold;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#epEmergency {}
+
+#epDDN {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.listor {
+  list-style: none;
+  margin: 1em 0;
+}
+
+#epDataPrivacy {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#epDataPrivacy .online, #epDataPrivacy .phone, #epDataPrivacy .output {}
+
+#epDataPrivacy ol.dropDowns {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  font: normal 400 14px sans-serif;
+  margin: 2px 0 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  background: #3b6c6b;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: 'barlow';
+  font-weight: bold;
+  padding: 8px 30px;
+  margin: 5px 90px 30px 80px;
+}
+
+button:hover {
+  background: #5fa4cb;
+  opacity:0.5; 
+  color: #fff;
+}
+
+button:disabled {
+  background: #ddd;
+  cursor: default;
+}
+
+button:hover:disabled {
+  background: #ddd;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+#epIssues {
+  width: 100%;
+}
+
+#epIssues .catdesc {
+  display: none;
+}
+
+#epIssues .catname {
+  font: normal 700 16px/20px sans-serif;
+}
+
+#epIssues .details {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+#epIssues .issue {
+  color: #0000ff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  position: relative;
+}
+
+#epIssues .issue:hover {
+  color: #008000;
+}
+
+#epIssues .name {
+  font: normal 700 14px/20px sans-serif;
+}
+
+#epIssues .desc {
+  flex-basis: 100%;
+  padding: 5px 0;
+}
+
+/* footer */
+
+footer {
+  font-size: 12px;
+  padding: 30px 0;
+  background: #004787;
+  color: white;
+}
+
+footer th {
+  display: none;
+}
+
+footer td {
+  padding: 5px 0 0 !important;
+}
+
+footer .line1 {
+  float: left;
+  padding-left: 10px;
+}
+
+footer .line2 {
+  color: #fff;
+  float: right;
+  padding-right: 10px;
+}
+
+footer .line2 a {}
+
+footer .line2 a:hover {}
+
+footer table {
+  margin: 0 auto !important;
+  width: 1200px !important;
+}
